@@ -1,4 +1,4 @@
-{
+var jobs = {
 	"basketball player": "basketball_player.PNG",
 	"designer": "designer.PNG",
 	"doctor": "doctor.PNG",
@@ -9,4 +9,5 @@
 	"teacher": "teacher.PNG",
 	"baseball player": "baseball_player.PNG",
 	"soccer player": "soccer_player.PNG"
-}
+};
+export default jobs
