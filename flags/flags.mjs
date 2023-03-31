@@ -1,4 +1,4 @@
-define({
+var countryCodes = {
 	"bd": "Bangladesh",
 	"be": "Belgium",
 	"bf": "Burkina Faso",
@@ -249,4 +249,5 @@ define({
 	"ua": "Ukraine",
 	"qa": "Qatar",
 	"mz": "Mozambique"
-})
+}
+export default countryCodes
