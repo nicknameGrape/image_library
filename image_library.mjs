@@ -1,4 +1,4 @@
-export const image_library = [
+const image_library = [
 	{
 			"article": null,
 			"colors": [
@@ -8864,3 +8864,4 @@ export const image_library = [
 			"text": "cucumber"
 	}
 ];
+export default image_library;
