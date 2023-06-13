@@ -3264,7 +3264,7 @@ const image_library = [
 					"fuzz"
 			],
 			"plural": "kiwis",
-			"src": "kiwi_jq_gafgc.png",
+			"src": "kiwi_906xscgz.png",
 			"tags": [
 					"fuzzy",
 					"fruit",
