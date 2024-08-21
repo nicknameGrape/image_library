@@ -10404,6 +10404,53 @@ const image_library = [
 				"greeting"
 		],
 		"text": "hug"
+},
+{
+	"src": "drone_fkhbc1zy.png",
+	"tags": [
+		"electronics"
+	],
+	"text": "drone"
+},
+{
+	"src": "crocodile_8lv6stlh.png",
+	"tags": [
+		"animal",
+	"reptile"
+	],
+	"text": "crocodile"
+},
+{
+	"src": "pigeon_3hwj5j2s.png",
+	"tags": [
+		"animal",
+	"bird",
+	"city"
+	],
+	"text": "pigeon"
+},
+{
+	"src": "mudskipper_g_p38i9k.png",
+	"tags": [
+		"animal",
+	"fish"
+	],
+	"text": "mudskipper"
+},
+{
+	"src": "seaweed_8zk__yuv.png",
+	"tags": [
+		"plant",
+	"sea"
+	],
+	"text": "seaweed"
+},
+{
+	"src": "bully_jfsr13_t.png",
+	"tags": [
+		"person"
+	],
+	"text": "bully"
 }
 ];
 export default image_library;
