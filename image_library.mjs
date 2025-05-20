@@ -9459,7 +9459,8 @@ const image_library = [
         "tags": [
             "food"
         ],
-        "text": "food"
+        "text": "food",
+				"like": "food"
     },
     {
         "src": "hole_diwayuao.png",
