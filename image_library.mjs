@@ -10557,7 +10557,6 @@ const image_library = [
         ],
         "text": "shapes"
     }
-]});
-;
+];
 
 export default image_library;
