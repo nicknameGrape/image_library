@@ -73,13 +73,15 @@ var ATTRACTIONS = {
 	],
 	"fr": [
 		{"text": "baguette", "src": "baguette.jpg"},
-		{"text": "the Millau Viaduct", "src": "millau_viaduct.jpg"},
+		//{"text": "the Millau Viaduct", "src": "millau_viaduct.jpg"},
+		{"text": "French bulldog", "src": "french_bulldog.jpg"},
 		{"text": "Mont Saint Michel", "src": "mont_saint_michel.jpg"}
 	],
 	"kr": [
 		{"text": "kimchi", "src": "kimchi.jpg"},
 		{"text": "K-pop", "src": "kpop.webp"},
-		{"text": "taekwondo", "src": "taekwondo.jpg"}
+		//{"text": "taekwondo", "src": "taekwondo.jpg"}
+		{"text": "Squid Game", "src": "squid_game.jpg"}
 	],
 	"cn": [
 		{"text": "panda", "src": "panda.jpg"},
@@ -114,7 +116,8 @@ var ATTRACTIONS = {
 	"ch": [
 		{"text": "fondue", "src": "fondue.jpg"},
 		{"text": "Swiss Army Knife", "src": "swiss_army_knife.jpg"},
-		{"text": "alpenhorn", "src": "alpenhorn.jpg"}
+		//{"text": "alpenhorn", "src": "alpenhorn.jpg"}
+		{"text": "swiss cheese", "src": "swiss_cheese.jpg"}
 	],
 	"br": [
 		{"text": "Rio Carnival", "src": "rio_carnival.webp"},
@@ -124,7 +127,8 @@ var ATTRACTIONS = {
 	"eg": [
 		{"text": "the Pyramids", "src": "pyramids.jpg"},
 		{"text": "dung beetle", "src": "dung_beetle.jpg"},
-		{"text": "the Suez Canal", "src": "suez_canal.jpg"}
+		//{"text": "the Suez Canal", "src": "suez_canal.jpg"}
+		{"text": "King Tut", "src": "king_tut.jpg"}
 	],
 	"gb": [
 		{"text": "the Beatles", "src": "the_beatles.jpg"},
