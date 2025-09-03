@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<style>
+body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+	font-size: 2em;
+	margin: 2em;
+}
+</style>
+<script type="module">
+	import CHARACTERS from "../../characters/popular.mjs"
+	CHARACTERS.forEach(function (obj) {
+		const link = document.createElement("a");
+		link.innerHTML = obj.name;
+		link.href = "../../characters/popular/"+obj.src;
+		document.body.appendChild(link);
+		console.log(link);
+	})
+</script>
+</html>
