@@ -9,10 +9,13 @@ body {margin: 0; touch-action: none;}
 .letter {font-size: 7vh; height: 14vh;}
 #subjectButtons {display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(2, 1fr); gap: 2vh;}
 .subjectButton > img {width: 30vh; height: 30vh; object-fit: contain;}
-#monthButtons {display: grid; grid-template-columns: repeat(6, 1fr); grid-template-rows: repeat(2, 1fr); gap: 2vh;}
-.monthButton > img {width: 25vh; height: 25vh; object-fit: contain;}
+#monthButtons {display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(3, 1fr); gap: 2vh; width: 50vw;}
+.monthButton > img {width: 20vh; height: 20vh; object-fit: contain;}
+#dateButtons {display: grid; grid-template-columns: repeat(7, 1fr); grid-template-rows: repeat(5, 1fr); width: 50vw;}
+.dateButton {display: flex; align-items: center; justify-content: center; width: 7vw; height: 7vw; font-size: 4vh;}
 input {display: none;}
 input:checked + label > img {background: lime;}
+input:checked + label {background: lime;}
 	</style>
 	<body>
 <div id="menu" class="view">
@@ -61,8 +64,11 @@ input:checked + label > img {background: lime;}
 	<div id="subjectButtons"></div>
 </div>
 <div id="birthday" class="view" style="display: none;">
-	<div class="title">When is your birthday?</div>
-	<div id="monthButtons"></div>
+	<div id="birthdayTitle" class="title">When is your birthday?</div>
+	<div style="display:flex;">
+		<div id="monthButtons"></div>
+		<div id="dateButtons"></div>
+	</div>
 </div>
 	</body>
 	<script type="module">
@@ -93,7 +99,12 @@ const viewSpellNameTitle = document.getElementById("spellNameTitle");
 const SUBJECTS = ["Japanese", "math", "art", "English", "social studies", "P.E.", "calligraphy", "home economics", "music", "science"];
 const divSubjectButtons = document.getElementById("subjectButtons");
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const DATES = ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th", "13th", "14th", "15th", "16th", "17th", "18th", "19th", "20th", "21st", "22nd", "23rd", "24th", "25th", "26th", "27th", "28th", "29th", "30th", "31st"];
 const divMonthButtons = document.getElementById("monthButtons");
+const divDateButtons = document.getElementById("dateButtons");
+let birthMonth = "";
+let birthDate = "";
+const viewBirthdayTitle = document.getElementById("birthdayTitle");
 
 Array.from(document.getElementsByClassName("menuButton")).forEach(el => el.addEventListener("click", menuButtonClickHandler));
 Array.from(document.getElementsByClassName("letter")).forEach(el => el.addEventListener("click", letterButtonClickHandler));
@@ -125,6 +136,10 @@ MONTHS.forEach(function (text) {
 	input.type = "radio";
 	input.id = text;
 	input.name = "month";
+	input.addEventListener("change", function (ev) {
+		birthMonth = ev.target.id;
+		viewBirthdayTitle.innerHTML = birthMonth + " " + birthDate;
+	});
 	label.htmlFor = text;
 	label.classList.add("monthButton");
 	img.src = src;
@@ -132,6 +147,24 @@ MONTHS.forEach(function (text) {
 	div.appendChild(input);
 	div.appendChild(label);
 	divMonthButtons.appendChild(div);
+});
+DATES.forEach(function (text) {
+	let div = document.createElement("div");
+	let input = document.createElement("input");
+	let label = document.createElement("label");
+	input.type = "radio";
+	input.id = text;
+	input.name = "date";
+	input.addEventListener("change", function (ev) {
+		birthDate = ev.target.id;
+		viewBirthdayTitle.innerHTML = birthMonth + " " + birthDate;
+	});
+	label.htmlFor = text;
+	label.innerHTML = text;
+	label.classList.add("dateButton");
+	div.appendChild(input);
+	div.appendChild(label);
+	divDateButtons.appendChild(div);
 });
 document.getElementById("backspace").addEventListener("click", backspaceButtonClickHandler);
 	</script>
