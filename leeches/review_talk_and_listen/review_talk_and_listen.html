@@ -16,6 +16,11 @@ body {margin: 0; touch-action: none;}
 input {display: none;}
 input:checked + label > img {background: lime;}
 input:checked + label {background: lime;}
+input[name="can"] + label {border: thick solid gray; font-size: 10vh; opacity: 50%;}
+input[name="can"]:checked + label {border: thick solid black; font-size: 10vh; opacity: 100%;}
+#yes + label {background: lime;}
+#no + label {background: red;}
+#imgCanYou {height: 50vh;}
 	</style>
 	<body>
 <div id="menu" class="view">
@@ -24,6 +29,7 @@ input:checked + label {background: lime;}
 		<button class="menuButton" value="spellName">How do you spell your name?</button>
 		<button class="menuButton" value="subject">What subject do you like?</button>
 		<button class="menuButton" value="birthday">When is your birthday?</button>
+		<button class="menuButton" value="can_you" id="menuButtonCan">Can you do it?</button>
 	</div>
 </div>
 <div id="spellName" class="view" style="display: none;">
@@ -70,10 +76,23 @@ input:checked + label {background: lime;}
 		<div id="dateButtons"></div>
 	</div>
 </div>
+<div id="can_you" class="view" style="display: none;">
+	<div id="canYouTitle" class="title">Can you dance?</div>
+	<div style="display:flex; flex-direction: column; align-items: center;">
+		<img id="imgCanYou" src="./images_can/dance_o2r4qfrs.png"/>
+		<div>
+			<input id="yes" type="radio" name="can"/>
+			<label for="yes">Yes, I can.</label>
+			<input id="no" type="radio" name="can"/>
+			<label for="no">No, I can't.</label>
+		</div>
+	</div>
+</div>
 	</body>
 	<script type="module">
 import Loader from "../js_modules/Loader.mjs"
 import images from "../../image_library.mjs"
+import can_do from "./images_can/can_do.mjs"
 
 function menuButtonClickHandler(ev) {
 	console.log("Switching to", ev.target.value);
@@ -167,5 +186,12 @@ DATES.forEach(function (text) {
 	divDateButtons.appendChild(div);
 });
 document.getElementById("backspace").addEventListener("click", backspaceButtonClickHandler);
+document.getElementById("menuButtonCan").addEventListener("click", function () {
+	let randomCanDo = can_do[Math.floor(Math.random()*can_do.length)];
+	document.getElementById("imgCanYou").src = "./images_can/"+randomCanDo.src;
+	document.getElementById("canYouTitle").innerHTML = randomCanDo.english;
+	document.getElementById("yes").checked = false;
+	document.getElementById("no").checked = false;
+});
 	</script>
 </html>
