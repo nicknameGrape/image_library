@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-	<style>
+	<head>
+		<link rel="icon" type="image/png" href="favicon.png">
+		<style>
 body {margin: 0; touch-action: none;}
 .view {display: flex; flex-direction: column;}
 .title {display: flex; align-items: center; justify-content: center; height: 20vh; font-size: 10vh; background: yellow;}
@@ -21,7 +23,8 @@ input[name="can"]:checked + label {border: thick solid black; font-size: 10vh; o
 #yes + label {background: lime;}
 #no + label {background: red;}
 #imgCanYou {height: 50vh;}
-	</style>
+		</style>
+	</head>
 	<body>
 <div id="menu" class="view">
 	<div class="title">Review: Talk and Listen</div>
@@ -77,9 +80,9 @@ input[name="can"]:checked + label {border: thick solid black; font-size: 10vh; o
 	</div>
 </div>
 <div id="can_you" class="view" style="display: none;">
-	<div id="canYouTitle" class="title">Can you dance?</div>
+	<div id="canYouTitle" class="title">Can you do it?</div>
 	<div style="display:flex; flex-direction: column; align-items: center;">
-		<img id="imgCanYou" src="./images_can/dance_o2r4qfrs.png"/>
+		<img id="imgCanYou"/>
 		<div>
 			<input id="yes" type="radio" name="can"/>
 			<label for="yes">Yes, I can.</label>
