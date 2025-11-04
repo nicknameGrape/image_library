@@ -37,6 +37,6 @@ export default [
 	{"src": "tetsubo.png","katakana": "キャン ユー ドゥ テツボウ？", "english": "Can you do tetsubo?", "japanese": "鉄棒はできますか？"},
 	{"src": "typing.png","katakana": "キャン ユー タイプ ファスト？", "english": "Can you type fast?", "japanese": "速くタイピングできますか？"},
 	{"src": "video_game_yc980ki5.png","katakana": "キャン ユー プレイ ビデオ ゲームス？", "english": "Can you play video games?", "japanese": "テレビゲームはできますか？"},
-	{"src": "volleyball__z47fwgh.png","katakana": "キャン ユー プレイ バレーボール？", "english": "Can you play volleyball?", "japanese": "バレーボールはできますか？"},
+	{"src": "volleyball__z47fwgh.png","katakana": "キャン ユー プレイ バレーボール？", "english": "Can you play volleyball?", "japanese": "バレーボールはできますか？"}//,
 	//{"src": "writing_english.jpg","katakana": "キャン ユー ライト イングリッシュ？", "english": "Can you write English?", "japanese": "英語は書けますか？"},
 ]
