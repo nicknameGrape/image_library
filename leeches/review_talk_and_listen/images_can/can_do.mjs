@@ -17,7 +17,7 @@ export default [
 	{"src": "judo_r63rt_bw.png","katakana": "キャン ユー ドゥー ジュードー？", "english": "Can you do judo?", "japanese": "柔道はできますか？"},
 	{"src": "jump.png","katakana": "キャン ユー ジャンプ ハイ？", "english": "Can you jump high?", "japanese": "高くジャンプできますか？"},
 	{"src": "jump_rope_jmxciuz1.png","katakana": "キャン ユー ジャンプ ロープ？", "english": "Can you jump rope?", "japanese": "縄跳びはできますか？"},
-	{"src": "natto_x7n82gbn.png","katakana": "キャン ユー イート ナットウ？", "english": "Can you eat natto?", "japanese": "納豆は食べられますか？"}
+	{"src": "natto_x7n82gbn.png","katakana": "キャン ユー イート ナットウ？", "english": "Can you eat natto?", "japanese": "納豆は食べられますか？"},
 	{"src": "origami_8wvwws3b.png","katakana": "キャン ユー メイク オリガミ？", "english": "Can you make origami?", "japanese": "折り紙はできますか？"},
 	{"src": "parkour.png","katakana": "キャン ユー ドゥー パルクール？", "english": "Can you do parkour?", "japanese": "パルクールはできますか？"},
 	{"src": "play_kendama_8734rppz.png","katakana": "キャン ユー プレイ ケンダマ？", "english": "Can you play kendama?", "japanese": "けん玉はできますか？"},
