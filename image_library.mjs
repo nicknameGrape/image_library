@@ -2477,7 +2477,7 @@ const image_library = [
         "colors": [
             "red"
         ],
-        "plural": "tomatos",
+        "plural": "tomatoes",
         "src": "tomato_74uiagkl.png",
         "tags": [
             "vegetable",
