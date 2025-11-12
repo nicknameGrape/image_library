@@ -21,7 +21,6 @@ function onload() {
 }
 
 function loop() {
-	console.log("looping");
 	progress = Math.min((performance.now() - startTime)/TIME_LIMIT, .97);
 	tween = Math.pow(progress, 2);
 	if (mistakes < 3) {
@@ -43,17 +42,21 @@ function loop() {
 }
 
 function mapPointerdownHander(e) {
-	//console.log(e.offsetX/scale, e.offsetY/scale, sign.x1, sign.y1);
-	//var x = e.offsetX/scale, y = e.offsetY/scale;
 	var zoomX = sign.x1*tween;
 	var zoomY = sign.y1*tween;
 	var zoomW = (sign.x2 - sign.x1)*tween + img.width*(1-tween);
 	var zoomH =  (sign.y2 - sign.y1)*tween + img.height*(1-tween);
-	var mh = REFS.map.canvas.height;
-	var mw = mh*zoomW/zoomH;
+	let mw, mh;
+	if (REFS.map.canvas.width/REFS.map.canvas.height >= img.width/img.height) {
+		mh = REFS.map.canvas.height;
+		mw = mh*zoomW/zoomH;
+	} else {
+		mw = REFS.map.canvas.width;
+		mh = mw*zoomH/zoomW;
+	}
 	var x = zoomX + e.offsetX/mw*zoomW;
 	var y = zoomY + e.offsetY/mh*zoomH;
-	console.log(x, y, sign.x1, sign.y1);
+	console.log(REFS.map.canvas.width, REFS.map.canvas.height, e.offsetX, e.offsetY, x, y, sign.x1, sign.y1);
 	if (x >= sign.x1 && x <= sign.x2 && y >= sign.y1 && y <= sign.y2) {
 		wrong.pause();
 		right.pause();
@@ -104,19 +107,15 @@ function render() {
 		var zoomH = img.height;
 	}
 	if (ar_img > ar_canvas) {
-		scale = cMap.width/img.width;
 		//xMap.drawImage(img, 0, 0, cMap.width, cMap.width*img.height/img.width);
 		xMap.drawImage(img, zoomX, zoomY, zoomW, zoomH, 0, 0, cMap.width, cMap.width*img.height/img.width);
 	} else {
-		scale = cMap.height/img.height;
 		//xMap.drawImage(img, 0, 0, cMap.height*img.width/img.height, cMap.height);
 		xMap.drawImage(img, zoomX, zoomY, zoomW, zoomH, 0, 0, cMap.height*img.width/img.height, cMap.height);
 	}
 	//context.strokeStyle = "yellow";
 	//context.lineWidth = 5;
 	//hdSigns.choices.forEach(function (o) {
-	//	context.strokeRect(o.x1*scale, o.y1*scale, (o.x2 - o.x1)*scale, (o.y2 - o.y1)*scale);
-	//});
 	REFS.hint.context.fillStyle = "pink";
 	if (sign !== null) {
 		fitText(REFS.hint.context, sign.sign);
@@ -148,7 +147,7 @@ const hdSigns = new HatDraw(SIGNS);
 var loader = new Loader("./");
 var img = loader.newImageAsset("lets_try_1_ABC_town_cropped.png", onload);
 var attempts = 0, avg = 0, total = 0, toAdd = null;
-var sign = null, scale;
+var sign = null;
 var progress, tween, startTime, request, TIME_LIMIT = 10000, TOP_SCORE = 1000, mistakes;
 var right = loader.newAudioAsset("correct.mp3", onload);
 var wrong = loader.newAudioAsset("wrong.mp3", onload);
