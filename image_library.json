@@ -10672,5 +10672,13 @@
 			"japanese"
 		],
 		"text": "ramen"
+	},
+	{
+		"src": "grilled_eel_rtyc5ta5.png",
+		"tags": [
+			"food",
+			"japanese"
+		],
+		"text": "grilled eel"
 	}
 ]
