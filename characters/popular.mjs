@@ -30,7 +30,28 @@ const POPULAR = [
 	{"src": "kintaro.gif", "name": "Kintaro"},
 	{"src": "jam_ojisan.gif", "name": "Uncle Jam"},
 	{"src": "inkling.png", "name": "Inkling"},
-	{"src": "cinderella_running.png", "name": "Cinderella"}
+	{"src": "cinderella_running.png", "name": "Cinderella"},
+	{"src": "trump.png", "name": "Trump"},
+	{"src": "sanae_takaichi.png", "name": "Sanae Takaichi"},
+	{"src": "rufi.png", "name": "Luffy"},
+	{"src": "namihei.png", "name": "Namihei"},
+	{"src": "einstein.png", "name": "Einstein"},
+	{"src": "kinopiko.png", "name": "Kinopiko"},
+	{"src": "bowser.png", "name": "Koopa"},
+	{"src": "5000_yen_lady.png", "name": "Tsuda Umeko"},
+	{"src": "samus_aran.png", "name": "Samus Aran"},
+	{"src": "opanchu.png", "name": "Opanchu Usagi"},
+	{"src": "melonpanna.png", "name": "Melonpanna"},
+	{"src": "lupin.png", "name": "Lupin III"},
+	{"src": "kuromi.png", "name": "Kuromi"},
+	{"src": "kirby_as_meta_knight.png", "name": "Kirby as Metanight"},
+	{"src": "ohtani_shohei.png", "name": "Ohtani Shohei"},
+	{"src": "miyakkii.png", "name": "Miyakki"},
+	{"src": "tsukushichan.png", "name": "Tsukushi-chan"},
+	{"src": "mary_had_a_little_lamb.png", "name": "Mary had a Little Lamb"},
+	{"src": "kinnikuman.gif", "name": "Kinnikuman"},
+	{"src": "cupid.png", "name": "Cupid"},
+	{"src": "anya.png", "name": "Anya"}
 ];
 
 export default POPULAR;
