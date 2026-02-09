@@ -20,7 +20,17 @@ const POPULAR = [
 	{"src": "pikachu_female.webp", "name": "Pikachu (female)"},
 	{"src": "shaun_of_the_sheep.png", "name": "Shaun the Sheep"},
 	{"src": "spongebob.png", "name": "Spongebob Squarepants"},
-	{"src": "urashimataro.png", "name": "Urashima Taro"}
+	{"src": "urashimataro.png", "name": "Urashima Taro"},
+	{"src": "batman.png", "name": "Batman"},
+	{"src": "porco_rosso.png", "name": "Porco Rosso"},
+	{"src": "peter_pan.gif", "name": "Peter Pan"},
+	{"src": "tinker_bell.png", "name": "Tinker Bell"},
+	{"src": "nemo.png", "name": "Nemo"},
+	{"src": "dory.png", "name": "Dory"},
+	{"src": "kintaro.gif", "name": "Kintaro"},
+	{"src": "jam_ojisan.gif", "name": "Uncle Jam"},
+	{"src": "inkling.png", "name": "Inkling"},
+	{"src": "cinderella_running.png", "name": "Cinderella"}
 ];
 
 export default POPULAR;
