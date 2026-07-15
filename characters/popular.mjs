@@ -51,7 +51,15 @@ const POPULAR = [
 	{"src": "mary_had_a_little_lamb.png", "name": "Mary had a Little Lamb"},
 	{"src": "kinnikuman.gif", "name": "Kinnikuman"},
 	{"src": "cupid.png", "name": "Cupid"},
-	{"src": "anya.png", "name": "Anya"}
+	{"src": "anya.png", "name": "Anya"},
+	{"src": "alice.png", "name": "Alice"},
+	{"src": "arare.png", "name": "Arare"},
+	{"src": "ariel.png", "name": "Ariel"},
+	{"src": "buzz.png", "name": "Buzz"},
+	{"src": "chucky.png", "name": "Chucky"},
+	{"src": "conan.png", "name": "Conan"},
+	{"src": "darth_vader.png", "name": "Darth Vader"},
+	{"src": "little_red_riding_hood.png", "name": "Little Red Riding Hood"}
 ];
 
 export default POPULAR;
