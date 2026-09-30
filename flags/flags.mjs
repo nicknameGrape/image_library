@@ -249,6 +249,7 @@ var countryCodes = {
 	"ua": "Ukraine",
 	"qa": "Qatar",
 	"mz": "Mozambique",
+	"eu": "E.U.",
 	"bd-jp": "バングラデシュ",
 	"be-jp": "ベルギー",
 	"bf-jp": "ブルキナファソ",
@@ -498,6 +499,7 @@ var countryCodes = {
 	"id-jp": "インドネシア",
 	"ua-jp": " ウクライナ",
 	"qa-jp": " カタール",
-	"mz-jp": "モザンビーク"
+	"mz-jp": "モザンビーク",
+	"eu-jp": "EU各国"
 }
 export default countryCodes 
